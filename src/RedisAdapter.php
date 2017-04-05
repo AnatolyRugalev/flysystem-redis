@@ -162,7 +162,7 @@ class RedisAdapter implements AdapterInterface
      */
     public function has($path)
     {
-        return $this->client->exists($path) === 1;
+        return $this->client->exists($path) == true;
     }
 
     /**
